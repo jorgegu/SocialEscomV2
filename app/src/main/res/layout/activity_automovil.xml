@@ -49,15 +49,14 @@
 
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="16dp"
+            android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
             android:id="@+id/editText17" />
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="25dp"
-            android:layout_weight="0.00" />
+            android:layout_height="13dp" />
 
         <TextView
             android:text="Modelo:"
@@ -67,15 +66,14 @@
 
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="16dp"
+            android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
             android:id="@+id/editText18" />
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="25dp"
-            android:layout_weight="0.00" />
+            android:layout_height="10dp" />
 
         <TextView
             android:text="Color:"
@@ -85,15 +83,14 @@
 
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="16dp"
+            android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
             android:id="@+id/editText19" />
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="25dp"
-            android:layout_weight="0.00" />
+            android:layout_height="13dp" />
 
         <TextView
             android:text="Número de asientos:"
@@ -103,15 +100,14 @@
 
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="16dp"
+            android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
             android:id="@+id/editText20" />
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="25dp"
-            android:layout_weight="0.00" />
+            android:layout_height="13dp" />
 
         <TextView
             android:text="Placas:"
@@ -121,15 +117,10 @@
 
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="16dp"
+            android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
             android:id="@+id/editText21" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="25dp"
-            android:layout_weight="0.19" />
 
         <Button
             android:text="Registrar Vehiculo"
@@ -137,4 +128,13 @@
             android:layout_height="wrap_content"
             android:id="@+id/registry" />
     </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_weight="0.19"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="53dp"
+        android:layout_marginTop="238dp" />
 </RelativeLayout>

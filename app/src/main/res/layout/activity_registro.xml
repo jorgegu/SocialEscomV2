@@ -10,229 +10,224 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.jortr.socialescomv2.Registro">
 
-    <LinearLayout
-        android:orientation="vertical"
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:weightSum="1">
-
-        <TextView
-            android:text="E-mail:"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView2" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/editText" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="5dp" />
-
-        <TextView
-            android:text="Contraseña:"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView6" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/editText3" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="5dp" />
-
-        <TextView
-            android:text="Nombre:"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView8" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/editText5" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="5dp" />
-
-        <TextView
-            android:text="Apellidos:"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView9" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:textSize="20dp"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/editText6" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="5dp" />
-
-        <TextView
-            android:text="Cumpleaños:"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView10" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:textSize="20dp"
-            android:inputType="textPersonName"
-            android:id="@+id/editText7" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="5dp" />
-
-        <TextView
-            android:text="Sexo:"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView11" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:textSize="20dp"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/editText9" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="5dp" />
-
-        <TextView
-            android:text="Telefono:"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView12" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:textSize="20dp"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/editText10" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="5dp" />
-
-        <TextView
-            android:text="Escuela:"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView13" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:textSize="20dp"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/editText11" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="5dp" />
-
-        <TextView
-            android:text="Ocupación:"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView14" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:textSize="20dp"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/editText12"/>
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="5dp" />
-
-        <TextView
-            android:text="Tipo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView15" />
+        android:layout_centerHorizontal="true">
 
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="E-mail:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="5dp" />
+
+            <TextView
+                android:text="Contraseña:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView6" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText3" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="5dp" />
+
+            <TextView
+                android:text="Nombre:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView8" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText5" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="5dp" />
+
+            <TextView
+                android:text="Apellidos:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView9" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="5dp" />
+
+            <TextView
+                android:text="Cumpleaños:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView10" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="5dp" />
+
+            <TextView
+                android:text="Sexo:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView11" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText9" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="5dp" />
+
+            <TextView
+                android:text="Telefono:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView12" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText10"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="5dp" />
+
+            <TextView
+                android:text="Escuela:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView13" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText11" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="5dp" />
+
+            <TextView
+                android:text="Ocupación:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView14" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText12" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="5dp" />
+
+            <TextView
+                android:text="Tipo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView15" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:minHeight="30dp" />
 
             <RadioGroup
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
+                android:layout_height="wrap_content" >
 
-        </LinearLayout>
+                <RadioButton
+                    android:text="Conductor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/r1"
+                    android:layout_weight="1" />
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="6dp"
-            android:minHeight="30dp" />
+                <RadioButton
+                    android:text="Pasajero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/r2"
+                    android:layout_weight="1" />
+            </RadioGroup>
 
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
-
-            <RadioButton
-                android:text="Conductor"
-                android:layout_width="wrap_content"
+            <Button
+                android:text="Registrarse"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/r1"
-                android:layout_weight="1" />
+                android:id="@+id/registry" />
 
-            <RadioButton
-                android:text="Pasajero"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/r2"
-                android:layout_weight="1" />
-        </RadioGroup>
-
-        <Button
-            android:text="Registrarse"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/registry" />
-
-    </LinearLayout>
+            </LinearLayout>
+    </ScrollView>
 </RelativeLayout>
