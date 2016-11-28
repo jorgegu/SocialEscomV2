@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_automovil"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jortr.socialescomv2.Automovil">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:weightSum="1">
+
+        <TextView
+            android:text="Bienvenido a SocialEscom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView25"
+            android:gravity="center" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_weight="0.00" />
+
+        <TextView
+            android:text="Datos del Vehiculo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView26" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_weight="0.00" />
+
+        <TextView
+            android:text="Marca:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView27" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText17" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_weight="0.00" />
+
+        <TextView
+            android:text="Modelo:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView28" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText18" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_weight="0.00" />
+
+        <TextView
+            android:text="Color:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView29" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText19" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_weight="0.00" />
+
+        <TextView
+            android:text="Número de asientos:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView30" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText20" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_weight="0.00" />
+
+        <TextView
+            android:text="Placas:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView31" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText21" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_weight="0.19" />
+
+        <Button
+            android:text="Registrar Vehiculo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/registry" />
+    </LinearLayout>
+</RelativeLayout>
