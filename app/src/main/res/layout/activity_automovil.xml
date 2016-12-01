@@ -52,7 +52,7 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/editText17" />
+            android:id="@+id/marca" />
 
         <Space
             android:layout_width="match_parent"
@@ -69,7 +69,7 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/editText18" />
+            android:id="@+id/modelo" />
 
         <Space
             android:layout_width="match_parent"
@@ -86,7 +86,7 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/editText19" />
+            android:id="@+id/color" />
 
         <Space
             android:layout_width="match_parent"
@@ -103,7 +103,7 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/editText20" />
+            android:id="@+id/asientos" />
 
         <Space
             android:layout_width="match_parent"
@@ -116,11 +116,11 @@
             android:id="@+id/textView31" />
 
         <EditText
+            android:id="@+id/placas"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/editText21" />
+            android:ems="10" />
 
         <Button
             android:text="Registrar Vehiculo"

@@ -32,7 +32,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:ems="10"
-                android:id="@+id/editText" />
+                android:id="@+id/email" />
 
             <Space
                 android:layout_width="match_parent"
@@ -50,7 +50,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:ems="10"
-                android:id="@+id/editText3" />
+                android:id="@+id/password" />
 
             <Space
                 android:layout_width="match_parent"
@@ -68,7 +68,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:ems="10"
-                android:id="@+id/editText5" />
+                android:id="@+id/nombre" />
 
             <Space
                 android:layout_width="match_parent"
@@ -85,7 +85,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
-                android:ems="10" />
+                android:ems="10"
+                android:id="@+id/apellidos" />
 
             <Space
                 android:layout_width="match_parent"
@@ -101,7 +102,8 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:id="@+id/fechaNac" />
 
             <Space
                 android:layout_width="match_parent"
@@ -119,7 +121,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:ems="10"
-                android:id="@+id/editText9" />
+                android:id="@+id/sexo" />
 
             <Space
                 android:layout_width="match_parent"
@@ -137,7 +139,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:ems="10"
-                android:id="@+id/editText10"/>
+                android:id="@+id/tel"/>
 
             <Space
                 android:layout_width="match_parent"
@@ -155,7 +157,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:ems="10"
-                android:id="@+id/editText11" />
+                android:id="@+id/escuela" />
 
             <Space
                 android:layout_width="match_parent"
@@ -173,7 +175,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:ems="10"
-                android:id="@+id/editText12" />
+                android:id="@+id/ocupacion" />
 
             <Space
                 android:layout_width="match_parent"

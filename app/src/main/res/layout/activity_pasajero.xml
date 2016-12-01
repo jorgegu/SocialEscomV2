@@ -72,12 +72,12 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/editText13" />
+            android:id="@+id/id_viaje" />
 
         <Button
             android:text="Agregarse al Viaje"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/button6" />
+            android:id="@+id/addv" />
     </LinearLayout>
 </RelativeLayout>

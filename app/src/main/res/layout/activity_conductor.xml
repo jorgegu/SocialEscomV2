@@ -49,7 +49,7 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/editText16" />
+            android:id="@+id/origen" />
 
         <Space
             android:layout_width="match_parent"
@@ -76,7 +76,7 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/editText8" />
+            android:id="@+id/destino" />
 
         <Space
             android:layout_width="match_parent"
@@ -93,7 +93,7 @@
             android:layout_height="wrap_content"
             android:inputType="date"
             android:ems="10"
-            android:id="@+id/editText14" />
+            android:id="@+id/fecha" />
 
         <Space
             android:layout_width="match_parent"
@@ -110,7 +110,7 @@
             android:layout_height="wrap_content"
             android:inputType="time"
             android:ems="10"
-            android:id="@+id/editText15" />
+            android:id="@+id/hora" />
 
         <Space
             android:layout_width="match_parent"
