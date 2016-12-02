@@ -2,125 +2,81 @@ package com.example.jortr.socialescomv2;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-import android.app.Application;
-import android.database.Cursor;
-import android.util.Log;
-import android.widget.TextView;
-import org.json.JSONException;
-import org.json.JSONObject;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
-import com.android.volley.AuthFailureError;
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-public class MainActivity extends AppCompatActivity {
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.signin : {
+                Toast.makeText(getApplicationContext(), "Loading...", Toast.LENGTH_LONG).show();
+                checkUser();
+                break;
+            }
+            case R.id.signup : {
+                startActivity(new Intent(MainActivity.this, Registro.class));
+                break;
+            }
+        }
+    }
 
 
-    Request request;
-    RequestQueue requestQueue;
-    private static final String URL="https://rotted-buffer.000webhostapp.com/base/user_control.php";
+    private void checkUser(){
+        mRootRef = FirebaseDatabase.getInstance().getReference();
+        mRootRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                if(dataSnapshot.hasChild( ((EditText) findViewById(R.id.username)).getText().toString() )){
+                    DataSnapshot userSnap = dataSnapshot.child( ((EditText) findViewById(R.id.username)).getText().toString() );
+                    if( userSnap.child( "pass" ).getValue().toString().equals( ((EditText) findViewById(R.id.password)).getText().toString() ) ){
+                        Toast.makeText(getApplicationContext(), "Bienvenido", Toast.LENGTH_SHORT).show();
+                        PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).edit().putString("USER", ((EditText) findViewById(R.id.username)).getText().toString()).apply();
+
+                        Log.d("sometag", PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).getString("USER", "defaultStringIfNothingFound") );
+
+                        if(userSnap.child("tipo").getValue().toString().equals("conductor")){
+                            startActivity(new Intent(MainActivity.this, Conductor.class));
+                        }else{
+                            startActivity(new Intent(MainActivity.this, Pasajero.class));
+                        }
+                    }else{
+                        Toast.makeText(getApplicationContext(), "Password incorrecto pendejo de mierda", Toast.LENGTH_SHORT).show();
+                    }
+
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                Toast.makeText(getApplicationContext(), "Ocurrio un error en la base de datos", Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
 
 
-
+    // global stuff, not safe but is for fucking tomorrow
+    DatabaseReference mRootRef;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        requestQueue = Volley.newRequestQueue(this);
-        final String username = ((EditText) findViewById(R.id.username)).getText().toString();
-        final String password = ((EditText) findViewById(R.id.password)).getText().toString();
-        Button b_signin= (Button) findViewById(R.id.signin);
-        Button b_signup= (Button) findViewById(R.id.signup);
 
-        b_signin.setOnClickListener(new View.OnClickListener(){
+        (findViewById(R.id.signin)).setOnClickListener(this);
 
-            public void onClick(View v){
-
-
-                request = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>(){
-
-                    public void onResponse(String response){
-                        try{
-                            JSONObject jsonObject = new JSONObject(response);
-                            if(jsonObject.names().get(0).equals("Yes")){
-                                Toast.makeText(getApplicationContext(),jsonObject.getString("Yes"),Toast.LENGTH_SHORT).show();
-                                startActivity(new Intent(MainActivity.this,Conductor.class));
-                            }else {
-                                Toast.makeText(getApplicationContext(), jsonObject.getString("Error"), Toast.LENGTH_SHORT).show();
-                            }
-                        }catch (JSONException e){
-                            e.printStackTrace();
-                        }
-                    }
-                }, new Response.ErrorListener(){
-                    @Override
-                    public void onErrorResponse(VolleyError error){
-                        //
-                    }
-                }){
-                    @Override
-                    protected Map<String, String> getParams() throws AuthFailureError{
-                        HashMap<String,String> hashMap = new HashMap<String, String>();
-                        hashMap.put("email",username);
-                        hashMap.put("password",password);
-                        return hashMap;
-                    }
-                };
-                requestQueue.add(request);
-/*
-                if (username.equals("user1") && password.equals("user1"))
-                {
-                    final Intent h1 = new Intent(MainActivity.this, Conductor.class);
-                    //h1.putExtra("usuario","george");
-                    startActivity(h1);
-                }
-                else if(username.equals("user2") && password.equals("user2"))
-                {
-
-                    final Intent h1 = new Intent(MainActivity.this, Pasajero.class);
-                    //h1.putExtra("usuario","george");
-                    startActivity(h1);
-
-                }
-                else{
-                    Toast.makeText(getApplicationContext(),"Usuario o Contraseña incorrecto", Toast.LENGTH_SHORT).show();
-                }
-
-                */
-            }
-
-
-
-
-        });
-
-
-
-
-
-
-        b_signup.setOnClickListener(new View.OnClickListener() {
-
-            public void onClick(View v) {
-                final Intent h2 = new Intent(MainActivity.this, Registro.class);
-                startActivity(h2);
-            }
-        });
-
-
+        (findViewById(R.id.signup)).setOnClickListener(this);
 
     }
 }

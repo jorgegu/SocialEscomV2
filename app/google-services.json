@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "923098885531",
+    "firebase_url": "https://socialescomv2.firebaseio.com",
+    "project_id": "socialescomv2",
+    "storage_bucket": "socialescomv2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:923098885531:android:53f7fef20b3384e5",
+        "android_client_info": {
+          "package_name": "com.example.jortr.socialescomv2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "923098885531-v14eok48m2a741o18n4a4371rqn3un2a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jortr.socialescomv2",
+            "certificate_hash": "8F49F15BB1975AF3E2B2A640FEA478274259483C"
+          }
+        },
+        {
+          "client_id": "923098885531-vg8c33n3kueageol8d2c03h0mp7b4h0i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9juU5JxirjjmfLmrBjgi1LGQSXjOKV14"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "923098885531-vg8c33n3kueageol8d2c03h0mp7b4h0i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

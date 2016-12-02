@@ -28,11 +28,6 @@
             android:layout_width="match_parent"
             android:layout_height="25dp" />
 
-        <TextView
-            android:text="Nuevo Viaje"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView18" />
 
         <Space
             android:layout_width="match_parent"
@@ -51,15 +46,24 @@
             android:ems="10"
             android:id="@+id/origen" />
 
+
+        <TextView
+            android:text="ID:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1999" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/viajeId" />
+
         <Space
             android:layout_width="match_parent"
             android:layout_height="16dp" />
 
-        <Button
-            android:text="Agregar mi ubicación"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/button2" />
 
         <Space
             android:layout_width="match_parent"
@@ -120,7 +124,7 @@
             android:text="Añadir Viaje"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/button5" />
+            android:id="@+id/addtravel" />
 
     </LinearLayout>
 </RelativeLayout>

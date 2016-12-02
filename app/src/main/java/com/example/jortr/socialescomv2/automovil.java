@@ -1,8 +1,8 @@
 package com.example.jortr.socialescomv2;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -22,7 +22,7 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Automovil extends AppCompatActivity {
+public class automovil extends AppCompatActivity {
 
     Request request;
     RequestQueue requestQueue;
@@ -55,7 +55,7 @@ public class Automovil extends AppCompatActivity {
                             JSONObject jsonObject = new JSONObject(response);
                             if(jsonObject.names().get(0).equals("Yes")){
                                 Toast.makeText(getApplicationContext(),jsonObject.getString("Yes"),Toast.LENGTH_SHORT).show();
-                                startActivity(new Intent(Automovil.this,MainActivity.class));
+                                startActivity(new Intent(automovil.this,MainActivity.class));
                             }else {
                                 Toast.makeText(getApplicationContext(), jsonObject.getString("Error"), Toast.LENGTH_SHORT).show();
                             }
